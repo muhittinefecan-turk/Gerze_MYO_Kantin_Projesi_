@@ -1,0 +1,8 @@
+{
+  "name": "Remix Gerze MYO Kantin - WhatsApp Ön Sipariş",
+  "description": "Gerze Meslek Yüksekokulu Kantini WhatsApp ön sipariş ve menü yönetim web uygulaması. Geliştirici: Muhittin Efecan Türk.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

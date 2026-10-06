@@ -1,0 +1,325 @@
+{
+  "canteen": {
+    "name": "Gerze MYO Kantini",
+    "school": "Sinop Üniversitesi Gerze Meslek Yüksekokulu",
+    "description": "Teneffüste sıra bekleme, lezzetini seç, siparişini WhatsApp ile doğrudan kantine ilet!",
+    "logo": "/image.png",
+    "whatsapp": "905431234567",
+    "workingHours": {
+      "open": "08:00",
+      "close": "17:30"
+    },
+    "developer": {
+      "name": "Muhittin Efecan Türk",
+      "title": "Yazılım Geliştirici",
+      "githubOrContact": "Gerze MYO"
+    }
+  },
+  "theme": {
+    "primary": "#059669",
+    "secondary": "#0d9488",
+    "background": "#f8fafc",
+    "surface": "#ffffff",
+    "text": "#0f172a",
+    "muted": "#64748b",
+    "success": "#10b981",
+    "warning": "#f59e0b",
+    "danger": "#ef4444"
+  },
+  "currency": "₺",
+  "announcement": {
+    "enabled": true,
+    "text": "📢 Teneffüste sıra bekleme! Siparişini seç, teslim saatini belirle, hazır olduğunda teslim al.",
+    "type": "promo"
+  },
+  "settings": {
+    "ordersEnabled": true,
+    "devMode": true,
+    "hideUnavailableProducts": true,
+    "disabledMessage": "Kantin şu anda yeni sipariş almamaktadır. Lütfen çalışma saatleri içinde tekrar deneyiniz.",
+    "showPickupTime": true,
+    "pickupTimes": [
+      "10:00 (1. Teneffüs)",
+      "10:50 (2. Teneffüs)",
+      "11:40 (3. Teneffüs)",
+      "12:30 (Öğle Arası)",
+      "13:00 (Öğle Arası)",
+      "13:50 (Öğleden Sonra 1)",
+      "14:40 (Öğleden Sonra 2)",
+      "15:30 (Ders Çıkışı)",
+      "Hemen (10-15 dk içinde)"
+    ],
+    "payment": {
+      "cash": true,
+      "cashLabel": "Nakit (Kantine geldiğinde öde)",
+      "pos": true,
+      "posLabel": "POS Cihazı / Kredi-Banka Kartı"
+    }
+  },
+  "categories": [
+    { "id": "tost", "name": "Tostlar", "iconName": "Flame" },
+    { "id": "sandvic", "name": "Sandviç & Sıcaklar", "iconName": "UtensilsCrossed" },
+    { "id": "sicak-icecek", "name": "Sıcak İçecekler", "iconName": "Coffee" },
+    { "id": "soguk-icecek", "name": "Soğuk İçecekler", "iconName": "CupSoda" },
+    { "id": "atistirmalik", "name": "Atıştırmalık & Hamur", "iconName": "Cookie" },
+    { "id": "tatli", "name": "Tatlılar", "iconName": "CakeSlice" }
+  ],
+  "products": [
+    {
+      "id": "kasarli-tost",
+      "name": "Kaşarlı Tost",
+      "description": "Özel tereyağında çıtır ekmek arasında bol erimiş kaşar peyniri.",
+      "category": "tost",
+      "price": 60,
+      "image": "https://images.unsplash.com/photo-1528735602780-2552fd46c7af?w=600&auto=format&fit=crop&q=80",
+      "available": true,
+      "featured": true,
+      "badge": "Çok Satan",
+      "allowNote": true,
+      "extras": [
+        { "id": "ketchup", "name": "Ketçap", "price": 0 },
+        { "id": "mayo", "name": "Mayonez", "price": 0 },
+        { "id": "extra-cheese", "name": "Ekstra Kaşar", "price": 15 },
+        { "id": "acisos", "name": "Acı Sos", "price": 0 }
+      ]
+    },
+    {
+      "id": "karisik-tost",
+      "name": "Karışık Tost (Sucuk + Kaşar)",
+      "description": "Kasap sucuğu ve taze kaşar peyniriyle hazırlanan klasik kantin tostu.",
+      "category": "tost",
+      "price": 75,
+      "discountPrice": 70,
+      "image": "https://images.unsplash.com/photo-1525351484163-7529414344d8?w=600&auto=format&fit=crop&q=80",
+      "available": true,
+      "featured": true,
+      "badge": "İndirimli",
+      "allowNote": true,
+      "extras": [
+        { "id": "ketchup", "name": "Ketçap", "price": 0 },
+        { "id": "mayo", "name": "Mayonez", "price": 0 },
+        { "id": "extra-sucuk", "name": "Ekstra Sucuk", "price": 20 },
+        { "id": "extra-cheese", "name": "Ekstra Kaşar", "price": 15 }
+      ]
+    },
+    {
+      "id": "sucuklu-tost",
+      "name": "Sucuklu Tost",
+      "description": "Baharatlı dana sucuk dilimleri ve tereyağlı çıtır ekmek.",
+      "category": "tost",
+      "price": 70,
+      "image": "https://images.unsplash.com/photo-1539252554453-80ab65ce3586?w=600&auto=format&fit=crop&q=80",
+      "available": true,
+      "featured": false,
+      "allowNote": true,
+      "extras": [
+        { "id": "ketchup", "name": "Ketçap", "price": 0 },
+        { "id": "mayo", "name": "Mayonez", "price": 0 },
+        { "id": "acisos", "name": "Acı Sos", "price": 0 }
+      ]
+    },
+    {
+      "id": "ayvalik-tostu",
+      "name": "Özel Ayvalık Tostu",
+      "description": "Özel tost ekmeğinde sucuk, salam, kaşar, domates, turşu ve rus salatası.",
+      "category": "tost",
+      "price": 95,
+      "image": "https://images.unsplash.com/photo-1550547660-d9450f859349?w=600&auto=format&fit=crop&q=80",
+      "available": true,
+      "featured": true,
+      "badge": "Doyurucu",
+      "allowNote": true,
+      "extras": [
+        { "id": "ketchup", "name": "Ketçap", "price": 0 },
+        { "id": "mayo", "name": "Mayonez", "price": 0 },
+        { "id": "extra-cheese", "name": "Ekstra Kaşar", "price": 15 }
+      ]
+    },
+    {
+      "id": "tavuk-doner-durum",
+      "name": "Tavuk Döner Dürüm",
+      "description": "Lavaş içerisinde özel soslu marine edilmiş tavuk, patates ve turşu.",
+      "category": "sandvic",
+      "price": 85,
+      "image": "https://images.unsplash.com/photo-1626700051175-6818013e1d4f?w=600&auto=format&fit=crop&q=80",
+      "available": true,
+      "featured": true,
+      "allowNote": true,
+      "extras": [
+        { "id": "extra-sos", "name": "Bol Soslu", "price": 0 },
+        { "id": "extra-tursu", "name": "Ekstra Turşu", "price": 0 },
+        { "id": "ketchup", "name": "Ketçap", "price": 0 },
+        { "id": "mayo", "name": "Mayonez", "price": 0 }
+      ]
+    },
+    {
+      "id": "soguk-sandvic",
+      "name": "Kaşarlı Salamlı Soğuk Sandviç",
+      "description": "Taze baget ekmeğinde kaşar peyniri, dana salam, kıvırcık marul ve domates.",
+      "category": "sandvic",
+      "price": 55,
+      "image": "https://images.unsplash.com/photo-1509722747041-616f39b57569?w=600&auto=format&fit=crop&q=80",
+      "available": true,
+      "featured": false,
+      "allowNote": true,
+      "extras": [
+        { "id": "mayo", "name": "Mayonez", "price": 0 }
+      ]
+    },
+    {
+      "id": "patates-kizartmasi",
+      "name": "Porsiyon Patates Kızartması",
+      "description": "Altın sarısı çıtır parmak patates, baharat karışımı ile servis edilir.",
+      "category": "sandvic",
+      "price": 45,
+      "image": "https://images.unsplash.com/photo-1573080496219-bb080dd4f877?w=600&auto=format&fit=crop&q=80",
+      "available": true,
+      "featured": false,
+      "allowNote": true,
+      "extras": [
+        { "id": "ketchup", "name": "Ketçap", "price": 0 },
+        { "id": "mayo", "name": "Mayonez", "price": 0 },
+        { "id": "cajun", "name": "Cajun Baharatı", "price": 0 }
+      ]
+    },
+    {
+      "id": "taze-demleme-cay",
+      "name": "Taze Demleme Çay",
+      "description": "Rize çayı, ince belli bardakta taze ve sıcacık.",
+      "category": "sicak-icecek",
+      "price": 10,
+      "image": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=600&auto=format&fit=crop&q=80",
+      "available": true,
+      "featured": false,
+      "allowNote": true,
+      "extras": []
+    },
+    {
+      "id": "filtre-kahve",
+      "name": "Filtre Kahve",
+      "description": "Taze çekilmiş çekirdeklerden demlenen taze filtre kahve.",
+      "category": "sicak-icecek",
+      "price": 35,
+      "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=600&auto=format&fit=crop&q=80",
+      "available": true,
+      "featured": false,
+      "allowNote": true,
+      "extras": [
+        { "id": "sut", "name": "Süt İlavesi", "price": 5 }
+      ]
+    },
+    {
+      "id": "sicak-cikolata",
+      "name": "Sıcak Çikolata",
+      "description": "Yoğun kıvamlı kremamsı sıcak çikolata.",
+      "category": "sicak-icecek",
+      "price": 30,
+      "image": "https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?w=600&auto=format&fit=crop&q=80",
+      "available": true,
+      "featured": false,
+      "allowNote": false,
+      "extras": []
+    },
+    {
+      "id": "kutu-kola",
+      "name": "Coca-Cola (330ml Kutu)",
+      "description": "Buz gibi soğuk kutu kola.",
+      "category": "soguk-icecek",
+      "price": 35,
+      "image": "https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=600&auto=format&fit=crop&q=80",
+      "available": true,
+      "featured": false,
+      "allowNote": false,
+      "extras": []
+    },
+    {
+      "id": "yayik-ayran",
+      "name": "Büyük Ayran (300ml)",
+      "description": "Doğal yoğurttan serinletici lezzetli ayran.",
+      "category": "soguk-icecek",
+      "price": 18,
+      "image": "https://images.unsplash.com/photo-1589733955941-5eeaf752f6dd?w=600&auto=format&fit=crop&q=80",
+      "available": true,
+      "featured": false,
+      "allowNote": false,
+      "extras": []
+    },
+    {
+      "id": "fuse-tea-seftali",
+      "name": "Fuse Tea Şeftali (330ml)",
+      "description": "Ferahlatıcı soğuk şeftali aromalı çay.",
+      "category": "soguk-icecek",
+      "price": 35,
+      "image": "https://images.unsplash.com/photo-1556881286-fc6915169721?w=600&auto=format&fit=crop&q=80",
+      "available": true,
+      "featured": false,
+      "allowNote": false,
+      "extras": []
+    },
+    {
+      "id": "dogal-maden-suyu",
+      "name": "Kızılay Maden Suyu (200ml)",
+      "description": "Doğal zengin mineralli maden suyu.",
+      "category": "soguk-icecek",
+      "price": 12,
+      "image": "https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=600&auto=format&fit=crop&q=80",
+      "available": true,
+      "featured": false,
+      "allowNote": false,
+      "extras": [
+        { "id": "limon", "name": "Dilim Limon", "price": 0 }
+      ]
+    },
+    {
+      "id": "su-500ml",
+      "name": "Su (500ml)",
+      "description": "Doğal kaynak suyu.",
+      "category": "soguk-icecek",
+      "price": 8,
+      "image": "https://images.unsplash.com/photo-1523362628745-0c100150b504?w=600&auto=format&fit=crop&q=80",
+      "available": true,
+      "featured": false,
+      "allowNote": false,
+      "extras": []
+    },
+    {
+      "id": "gevrek-simit",
+      "name": "Sıcak Çıtır Simit",
+      "description": "Gerze fırınından günlük taze susamlı gevrek simit.",
+      "category": "atistirmalik",
+      "price": 15,
+      "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&auto=format&fit=crop&q=80",
+      "available": true,
+      "featured": false,
+      "allowNote": false,
+      "extras": [
+        { "id": "ucgen-peynir", "name": "Üçgen Peynir", "price": 10 }
+      ]
+    },
+    {
+      "id": "kasarli-pogaca",
+      "name": "Kaşarlı Poğaça",
+      "description": "Yumuşacık tereyağlı hamur ve bol kaşar dolgulu.",
+      "category": "atistirmalik",
+      "price": 20,
+      "image": "https://images.unsplash.com/photo-1608198093002-ad4e005484ec?w=600&auto=format&fit=crop&q=80",
+      "available": true,
+      "featured": false,
+      "allowNote": false,
+      "extras": []
+    },
+    {
+      "id": "islak-kek",
+      "name": "Ev Yapımı Bol Çikolatalı Islak Kek",
+      "description": "Gerçek bitter çikolata soslu, taptaze porsiyon kek dilimi.",
+      "category": "tatli",
+      "price": 40,
+      "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=600&auto=format&fit=crop&q=80",
+      "available": true,
+      "featured": true,
+      "badge": "Günün Tatlısı",
+      "allowNote": false,
+      "extras": []
+    }
+  ]
+}
